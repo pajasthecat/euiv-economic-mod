@@ -17,7 +17,7 @@ We are noobs at modding so we will use some resources to get started.
 The gist of it is that ypou copy the file/folder structure and chnage the stuff you want to overwrite.
 
 Example: 
-If i want to change the flag of swedenmn =>
+If i want to change the flag of sweden =>
 
 I copy the folder stucture gfx/flags => 
 
