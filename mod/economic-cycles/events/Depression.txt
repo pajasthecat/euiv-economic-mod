@@ -1,0 +1,34 @@
+namespace = economic_cycles_depression
+
+# Depression
+country_event = {
+	id = economic_cycles_depression.1
+	title = "economic_cycles_depression_title"
+	desc = "economic_cycles_depression_desc"
+	picture = RELIGION_eventPicture
+		
+	trigger = {
+		is_year = 1455
+	}
+
+	mean_time_to_happen = {
+		months = 1	
+	}
+
+    immediate = {
+        add_years_of_income = 0.7
+    }
+	
+	option = {
+		name = "Spend money on guns!"
+        add_years_of_income = 1
+        add_treasury = -50
+		}
+        
+    option = {
+		name = "The recovery will eventually happen!"
+        add_years_of_income = 0.75
+        add_treasury = -50
+		}
+	}
+}
