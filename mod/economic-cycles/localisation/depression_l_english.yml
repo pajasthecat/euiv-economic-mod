@@ -1,0 +1,8 @@
+﻿l_english:
+ economic_cycles_depression.1.t:0 "Oh no! Depression!"
+ economic_cycles_depression.1.d:0 "You have been hit by a depression, you are in for a ride!" 
+ economic_cycles_depression.1.o1.n:0 "You have been hit by a depression"
+ economic_cycles_depression.2.t:0 "Stop depression"
+ economic_cycles_depression.2.d:0 "Stop depression"
+ economic_cycles_depression.2.o1.n:0 "Kickstart the economy by purchsing weapons!"
+ economic_cycles_depression.2.o2.n:0 "The recovery will eventually happen!"

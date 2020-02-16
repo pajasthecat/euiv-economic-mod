@@ -1,10 +1,10 @@
 namespace = economic_cycles_depression
 
-# Depression
+# Depression hits
 country_event = {
 	id = economic_cycles_depression.1
-	title = "economic_cycles_depression_title"
-	desc = "economic_cycles_depression_desc"
+	title = "economic_cycles_depression.1.t"
+	desc = "economic_cycles_depression.1.d"
 	picture = RELIGION_eventPicture
 		
 	trigger = {
@@ -14,21 +14,53 @@ country_event = {
 	mean_time_to_happen = {
 		months = 1	
 	}
-
-    immediate = {
-        add_years_of_income = 0.7
-    }
 	
 	option = {
-		name = "Spend money on guns!"
-        add_years_of_income = 1
+		name = "economic_cycles_depression.1.o1.n"
+        add_trade_modifier = {
+            who = ROOT
+            duration = 5475
+            power = -15
+            key = DEP_STARTS
+            }
+		}
+	}
+}
+
+# Depression stops
+country_event = {
+	id = economic_cycles_depression.2
+	title = "economic_cycles_depression.2.t"
+	desc = "economic_cycles_depression.2.d"
+	picture = RELIGION_eventPicture
+		
+	trigger = {
+		is_year = 1455
+	}
+
+	mean_time_to_happen = {
+		months = 100	
+	}
+
+    immidiate = {
+        export_to_variable = {
+            which = moneyToGive
+            value = monthly_income * 2
+            who = ROOT
+            }
+        }
+	
+	option = {
+		name = "economic_cycles_depression.2.o1.n"
+        remove_trade_modifier = {
+            who = ROOT
+            key = DEP_STARTS
+            }
         add_treasury = -50
 		}
-        
+             
     option = {
-		name = "The recovery will eventually happen!"
-        add_years_of_income = 0.75
-        add_treasury = -50
+		name = "economic_cycles_depression.2.o2.n"
 		}
 	}
 }
